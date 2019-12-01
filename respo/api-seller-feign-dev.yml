@@ -1,3 +1,11 @@
+server:
+  port: 9000
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
 spring:
   application:
     name: mobileshop-api-seller-feign
@@ -7,14 +15,8 @@ spring:
     admin:
       client:
         url: http://localhost:8777
-
-server:
-  port: 9000
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+  main:
+    allow-bean-definition-overriding: true
 
 feign:
   hystrix:
