@@ -15,8 +15,6 @@ spring:
     admin:
       client:
         url: http://localhost:8777
-  main:
-    allow-bean-definition-overriding: true
 
 feign:
   hystrix:
