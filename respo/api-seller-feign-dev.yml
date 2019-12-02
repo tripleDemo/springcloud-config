@@ -19,8 +19,10 @@ spring:
 feign:
   hystrix:
     enabled: true
-    command:
-      default:
-        execution:
-          isolation:
-            strategy: SEMAPHORE
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
